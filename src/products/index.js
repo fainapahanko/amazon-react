@@ -50,7 +50,7 @@ router.delete("/:id",(req,res)=>{
     const productsArray = readFile()
     const filteredArray = productsArray.filter(product => product._id !== req.params.id)
     fs.writeFileSync(productsFile, JSON.stringify(filteredArray))
-    res.send(ilteredArray)
+    res.send(filteredArray)
 })
 
 const readFile = () => {
