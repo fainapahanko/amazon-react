@@ -1,0 +1,31 @@
+[{
+    "name": "Nokia 1101",
+    "description": "the best phone evere",
+    "brand": "nokia",
+    "imageUrl": "https://drop.ndtv.com/TECH/product_database/images/2152017124957PM_635_nokia_3310.jpeg?downsize=*:420&output-quality=80",
+    "price": 100,
+    "createdAt": "2019-12-13T09:42:52.143Z",
+    "category": "smartphones",
+    "id": 1,
+    "updatedAt": "2019-12-13T09:48:48.024Z"
+}, {
+    "name": "Iphone X",
+    "description": "Poznaj iPhone'a – najpotężniejsze urządzenie osobiste na świecie. Sprawdź nowego iPhone'a 11 i iPhone'a 11 Pro.",
+    "brand": "Apple",
+    "imageUrl": "https://static1.mediaexpert.pl/temp/thumbs-new/2/products/814/smartfon-apple-iphone-8-plus-64gb-zloty_986814_4415286_350x350w50.jpg",
+    "price": 1000,
+    "category": "smartphones",
+    "_id": "1ih3wprkdbk43yqwog",
+    "createdAt": "2019-12-13T09:42:52.143Z",
+    "id": 2
+}, {
+    "name": "extremely loud and incredibly close",
+    "description": "Extremely Loud & Incredibly Close is a 2005 novel by Jonathan Safran Foer. The book's narrator is a nine-year-old boy named Oskar Schell. In the story, Oskar discovers a key in a vase that belonged to his father, a year after he is killed in the September 11 attacks.",
+    "brand": "Stephen Daldry",
+    "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/51uY2ceXuCL._SX331_BO1,204,203,200_.jpg",
+    "price": 10,
+    "category": "books",
+    "_id": "1ih3wprketk43yteky",
+    "createdAt": "2019-12-13T09:44:48.657Z",
+    "id": 3
+}]
