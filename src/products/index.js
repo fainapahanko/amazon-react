@@ -15,9 +15,9 @@ router.get("/",(req, res)=>{
     } else res.send(productsArray)
 })
 
-router.get("/:id",[sanitize("id").toInt()],(req,res)=>{
+router.get("/:id",(req,res)=>{
     const productsArray = readFile()
-    const product = productsArray.find(product => product.id === req.params.id)
+    const product = productsArray.find(product => product._id === req.params.id)
     if(product) res.send(product)
 })
 
