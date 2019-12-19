@@ -1,15 +1,4 @@
 [{
-    "name": "Nokia 1101",
-    "description": "the best phone evere",
-    "brand": "nokia",
-    "imageUrl": "https://drop.ndtv.com/TECH/product_database/images/2152017124957PM_635_nokia_3310.jpeg?downsize=*:420&output-quality=80",
-    "price": 100,
-    "createdAt": "2019-12-13T09:42:52.143Z",
-    "category": "smartphones",
-    "_id": "1ih3wprkdbk43yqwogvv",
-    "id": 1,
-    "updatedAt": "2019-12-13T09:48:48.024Z"
-}, {
     "name": "Iphone X",
     "description": "Poznaj iPhone'a – najpotężniejsze urządzenie osobiste na świecie. Sprawdź nowego iPhone'a 11 i iPhone'a 11 Pro.",
     "brand": "Apple",
@@ -74,4 +63,12 @@
     "_id": "1999ih3wprkdbk43yqwogvv",
     "createdAt": "2019-12-13T13:00:29.581Z",
     "id": 8
+}, {
+    "name": "9994",
+    "description": "Poznaj iPhone'a – najpotężniejsze urządzenie osobiste na świecie. Sprawdź nowego iPhone'a 11 i iPhone'a 11 Pro.",
+    "brand": "Apple",
+    "imageUrl": "https://static1.mediaexpert.pl/temp/thumbs-new/2/products/814/smartfon-apple-iphone-8-plus-64gb-zloty_986814_4415286_350x350w50.jpg",
+    "price": 1000,
+    "category": "smartphones",
+    "updatedAt": "2019-12-13T16:13:09.755Z"
 }]

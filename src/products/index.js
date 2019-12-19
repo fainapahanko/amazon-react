@@ -1,6 +1,7 @@
 const fs = require("fs")
 const path = require("path")
 const express = require("express")
+const multer = require("multer")
 const { sanitize } = require("express-validator");
 const router = express.Router()
 var uniqid = require('uniqid');
@@ -20,19 +21,23 @@ router.get("/:id",(req,res)=>{
     const product = productsArray.find(product => product._id === req.params.id)
     if(product) res.send(product)
 })
+const upload = multer()
 
-router.post("/",(req,res)=>{
+router.post("/", upload.single("img"), async(req,res)=>{
     const productsArray = readFile()
     const obj = {
         ...req.body,
         _id: uniqid(),
-        createdAt: new Date(),
-        id: productsArray.length + 1
+        createdAt: new Date()
     }
+    const imgDest = path.join(__dirname, "../../public/images/" + obj._id + ".jpg")
+    await fs.writeFile(imgDest, req.file.buffer)
+    obj.imageUrl = imgDest
     productsArray.push(obj)
-    fs.writeFileSync(productsFile, JSON.stringify(productsArray))
+    await fs.writeFile(productsFile, JSON.stringify(productsArray))
     res.send(productsArray)
 })
+
 
 router.put("/:id",(req,res)=>{
     const productsArray = readFile()
@@ -41,7 +46,8 @@ router.put("/:id",(req,res)=>{
         updatedAt: new Date(),
     }
     const product = productsArray.find(products => products._id === req.params.id)
-    productsArray[product.id-1] = updated
+    const position = productsArray.indexOf(product)
+    productsArray[position] = updated
     fs.writeFileSync(productsFile, JSON.stringify(productsArray))
     res.send(productsArray)
 })
